@@ -1,0 +1,54 @@
+[
+  {
+      "model": "rareapi.user",
+      "pk": 1,
+      "fields": {
+          "uid": "UlisQ8Nt3BZ2K9WcwLx2O4SdHvW2",
+          "first_name": "Ryan",
+          "last_name": "Bigelow",
+          "email": "r@b.com",
+          "username": "ryanbigelow",
+          "password": "123pie",
+          "is_staff": true
+      }
+  },
+  {
+    "model": "rareapi.user",
+    "pk": 2,
+    "fields": {
+        "uid": "t5vbzTy3OJazbkCP7JuIvF6olLb2",
+        "first_name": "Allison",
+        "last_name": "Blumenthal",
+        "email": "a@b.com",
+        "username": "allisonblumenthal",
+        "password": "456cake",
+        "is_staff": true
+    }
+  },
+  {
+    "model": "rareapi.user",
+    "pk": 3,
+    "fields": {
+        "uid": "25lyckD23lTB6QVFsVeFofkYchJ2",
+        "first_name": "Erin",
+        "last_name": "Stephens",
+        "email": "e@s.com",
+        "username": "erinstephens",
+        "password": "789frog",
+        "is_staff": true
+    }
+  },
+  {
+    "model": "rareapi.user",
+    "pk": 4,
+    "fields": {
+        "uid": "FuTvsayb1SeYeqQAp4SRSG6qaU33",
+        "first_name": "Dede",
+        "last_name": "Hill",
+        "email": "d@h.com",
+        "username": "dedehill",
+        "password": "000moto",
+        "is_staff": true
+    }
+  }
+]
