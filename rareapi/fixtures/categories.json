@@ -1,0 +1,30 @@
+[
+  {
+    "model": "rareapi.category",
+    "pk": 1,
+    "fields": {
+      "label": "Tech"
+    }
+  },
+  {
+    "model": "rareapi.category",
+    "pk": 2,
+    "fields": {
+      "label": "Pets"
+    }
+  },
+  {
+    "model": "rareapi.category",
+    "pk": 3,
+    "fields": {
+        "label": "Food"
+    }
+  },
+  {
+    "model": "rareapi.category",
+    "pk": 3,
+    "fields": {
+        "label": "Music"
+    }
+  }
+]
