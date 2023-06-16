@@ -1,0 +1,46 @@
+[
+  {
+      "model": "rareapi.posts",
+      "pk": 1,
+      "fields": {
+          "title": "Job Growth in Tech",
+          "content": "yadda yadda",
+          "category": 1,
+          "publication_date": "2023-06-15",
+          "header_image_url": "https://freerangestock.com/sample/62086/graph-increasing-indicates-growth-statistics-and-increase.jpg"
+      }
+  },
+  {
+    "model": "rareapi.posts",
+    "pk": 2,
+    "fields": {
+        "title": "NSS Is Great",
+        "content": "Ryan",
+        "category": 2,
+        "publication_date": "2023-06-15",
+        "header_image_url": "https://www.greatschools.org/gk/wp-content/uploads/2014/03/The-school-visit-what-to-look-for-what-to-ask-1.jpg"
+    }
+  },
+  {
+    "model": "rareapi.posts",
+    "pk": 3,
+    "fields": {
+        "title": "New Developments in AI",
+        "content": "Ryan",
+        "category": 3,
+        "publication_date": "2023-06-15",
+        "header_image_url": "https://plat.ai/wp-content/uploads/aibuild.jpg.webp"
+    }
+  },
+  {
+    "model": "rareapi.posts",
+    "pk": 4,
+    "fields": {
+        "title": "Apple Glasses",
+        "content": "Ryan",
+        "category": 4,
+        "publication_date": "2023-06-15",
+        "header_image_url": "https://pbs.twimg.com/media/FFdkSqTWUAA9Zuj.jpg"
+    }
+  }
+]
