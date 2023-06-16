@@ -1,0 +1,42 @@
+[
+  {
+    "model": "rareapi.comment",
+    "pk": 1,
+    "fields": {
+      "post_id": 1,
+      "author_id": 1,
+      "content": "I do not agree.",
+      "created_on": "2023-08-15"
+    }
+  },
+  {
+    "model": "rareapi.comment",
+    "pk": 2,
+    "fields": {
+      "post_id": 2,
+      "author_id": 2,
+      "content": "This is the best post that's ever been posted.",
+      "created_on": "2023-07-20"
+    }
+  },
+  {
+    "model": "rareapi.comment",
+    "pk": 3,
+    "fields": {
+      "post_id": 1,
+      "author_id": 2,
+      "content": "Cool, cool, cool.",
+      "created_on": "2023-09-05"
+    }
+  },
+  {
+    "model": "rareapi.comment",
+    "pk": 4,
+    "fields": {
+      "post_id": 2,
+      "author_id": 1,
+      "content": "What does this even mean???",
+      "created_on": "2023-04-20"
+    }
+  }
+]
