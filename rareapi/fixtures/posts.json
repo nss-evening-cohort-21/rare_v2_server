@@ -3,44 +3,52 @@
       "model": "rareapi.post",
       "pk": 1,
       "fields": {
+          "user_id": 1,
           "title": "Job Growth in Tech",
           "content": "yadda yadda",
-          "category": 1,
+          "category_id": 1,
           "publication_date": "2023-06-15",
-          "header_image_url": "https://freerangestock.com/sample/62086/graph-increasing-indicates-growth-statistics-and-increase.jpg"
+          "image_url": "https://freerangestock.com/sample/62086/graph-increasing-indicates-growth-statistics-and-increase.jpg",
+          "approved": true
       }
   },
   {
     "model": "rareapi.post",
     "pk": 2,
     "fields": {
+        "user_id": 2,
         "title": "NSS Is Great",
         "content": "Ryan",
-        "category": 2,
+        "category_id": 2,
         "publication_date": "2023-06-15",
-        "header_image_url": "https://www.greatschools.org/gk/wp-content/uploads/2014/03/The-school-visit-what-to-look-for-what-to-ask-1.jpg"
+        "image_url": "https://www.greatschools.org/gk/wp-content/uploads/2014/03/The-school-visit-what-to-look-for-what-to-ask-1.jpg",
+        "approved": true
     }
   },
   {
     "model": "rareapi.post",
     "pk": 3,
     "fields": {
+        "user_id": 3,
         "title": "New Developments in AI",
         "content": "Ryan",
-        "category": 3,
+        "category_id": 3,
         "publication_date": "2023-06-15",
-        "header_image_url": "https://plat.ai/wp-content/uploads/aibuild.jpg.webp"
+        "image_url": "https://plat.ai/wp-content/uploads/aibuild.jpg.webp",
+        "approved": true
     }
   },
   {
     "model": "rareapi.post",
     "pk": 4,
     "fields": {
+        "user_id": 4,
         "title": "Apple Glasses",
         "content": "Ryan",
-        "category": 4,
+        "category_id": 4,
         "publication_date": "2023-06-15",
-        "header_image_url": "https://pbs.twimg.com/media/FFdkSqTWUAA9Zuj.jpg"
+        "image_url": "https://pbs.twimg.com/media/FFdkSqTWUAA9Zuj.jpg",
+        "approved": true
     }
   }
 ]
