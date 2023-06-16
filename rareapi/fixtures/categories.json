@@ -22,7 +22,7 @@
   },
   {
     "model": "rareapi.category",
-    "pk": 3,
+    "pk": 4,
     "fields": {
         "label": "Music"
     }
