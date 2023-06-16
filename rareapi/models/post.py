@@ -11,4 +11,4 @@ class Post(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     publication_date = models.DateField()
     header_image_url = models.CharField(max_length=500)
-    approved = models.BooleanField(max_length=50)
+    approved = models.BooleanField(default=False)
