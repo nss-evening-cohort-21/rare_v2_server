@@ -1,9 +1,1 @@
-[FORMAT] 
-  good-names=i,j,ex,pk
-
-[MESSAGES CONTROL]
-  disable=broad-except,imported-auth-user,missing-class-docstring,no-self-use,abstract-method
-
-[MASTER]
-  disable=C0114,
-
+[FORMAT] \n  good-names=i,j,ex,pk\n\n[MESSAGES CONTROL]\n  disable=broad-except,imported-auth-user,missing-class-docstring,no-self-use,abstract-method\n\n[MASTER]\n  disable=C0114,\n
