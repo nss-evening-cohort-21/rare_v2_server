@@ -3,44 +3,60 @@
       "model": "rareapi.rare_user",
       "pk": 1,
       "fields": {
+          "first_name": "Ryan",
+          "last_name": "Bigelow",
           "bio": "Ryan likes pie and coding",
           "profile_image_url": "https://commons.wikimedia.org/wiki/Commons:Quality_images#/media/File:Gull_portrait_ca_usa.jpg",
+          "email": "r@b.com",
           "created_on": "2023-06-15",
           "active": true,
-          "user_id": 1
+          "is_staff": true,
+          "uid": "UlisQ8Nt3BZ2K9WcwLx2O4SdHvW2"
       }
   },
   {
     "model": "rareapi.rare_user",
     "pk": 2,
     "fields": {
+        "first_name": "Allison",
+        "last_name": "Blumenthal",
         "bio": "Allison gets her cake and eats it too",
         "profile_image_url": "https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg",
+        "email": "a@b.com",
         "created_on": "2023-06-15",
         "active": true,
-        "user_id": 2
+        "is_staff": true,
+        "uid": "t5vbzTy3OJazbkCP7JuIvF6olLb2"
     }
   },
   {
     "model": "rareapi.rare_user",
     "pk": 3,
     "fields": {
+        "first_name": "Erin",
+        "last_name": "Stephens",
         "bio": "I think Erin likes frogs",
         "profile_image_url": "https://gweb-research-imagen.web.app/compositional/An%20oil%20painting%20of%20a%20British%20Shorthair%20cat%20wearing%20a%20cowboy%20hat%20and%20red%20shirt%20skateboarding%20on%20a%20beach./1_.jpeg",
+        "email": "e@s.com",
         "created_on": "2023-06-15",
         "active": true,
-        "user_id": 3
+        "is_staff": true,
+        "uid": "25lyckD23lTB6QVFsVeFofkYchJ2"
     }
   },
   {
     "model": "rareapi.rare_user",
     "pk": 4,
     "fields": {
+        "first_name": "Dede",
+        "last_name": "Hill",
         "bio": "Moto fighter boy",
         "profile_image_url": "https://letsenhance.io/static/66c1b6abf8f7cf44c19185254d7adb0c/28ebd/AiArtBefore.jpg",
+        "email": "d@h.com",
         "created_on": "2023-06-15",
         "active": true,
-        "user_id": 4
+        "is_staff": true,
+        "uid": "FuTvsayb1SeYeqQAp4SRSG6qaU33"
     }
   }
 ]
