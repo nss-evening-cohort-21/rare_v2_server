@@ -1,6 +1,6 @@
 [
   {
-      "model": "rareapi.rare_user",
+      "model": "rareapi.rareuser",
       "pk": 1,
       "fields": {
           "first_name": "Ryan",
@@ -15,7 +15,7 @@
       }
   },
   {
-    "model": "rareapi.rare_user",
+    "model": "rareapi.rareuser",
     "pk": 2,
     "fields": {
         "first_name": "Allison",
@@ -30,7 +30,7 @@
     }
   },
   {
-    "model": "rareapi.rare_user",
+    "model": "rareapi.rareuser",
     "pk": 3,
     "fields": {
         "first_name": "Erin",
@@ -45,7 +45,7 @@
     }
   },
   {
-    "model": "rareapi.rare_user",
+    "model": "rareapi.rareuser",
     "pk": 4,
     "fields": {
         "first_name": "Dede",
