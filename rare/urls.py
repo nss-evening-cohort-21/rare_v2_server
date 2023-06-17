@@ -1,9 +1,3 @@
-from django.conf.urls import include
-from rest_framework import routers
-from django.contrib import admin
-from django.urls import path
-from rareapi.views import CommentView
-
 """
 URL configuration for rare project.
 
@@ -20,7 +14,14 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf.urls import include
+from django.contrib import admin
+from rest_framework import routers
+from rareapi.views import TagView, CommentView
+from django.urls import path
+
 router = routers.DefaultRouter(trailing_slash=False)
+router.register(r'tags', TagView, 'tag')
 router.register(r'comments', CommentView, 'comment')
 
 urlpatterns = [
