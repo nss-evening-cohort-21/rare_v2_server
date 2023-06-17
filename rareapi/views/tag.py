@@ -37,9 +37,7 @@ class TagView(ViewSet):
         """
 
         tag = Tag.objects.create(
-            name=request.data["name"],
-            age=request.data["age"],
-            bio=request.data["bio"]
+            label=request.data["label"]
         )
         serializer = TagSerializer(tag)
         return Response(serializer.data)
@@ -52,9 +50,7 @@ class TagView(ViewSet):
         """
 
         tag = Tag.objects.get(pk=pk)
-        tag.name = request.data["name"]
-        tag.age = request.data["age"]
-        tag.bio = request.data["bio"]
+        tag.label = request.data["label"]
         tag.save()
 
         return Response(None, status=status.HTTP_204_NO_CONTENT)
@@ -68,11 +64,7 @@ class TagView(ViewSet):
 class TagSerializer(serializers.ModelSerializer):
     """JSON serializer for Tags
     """
-    song_count = serializers.IntegerField(default=None)
 
     class Meta:
         model = Tag
-        fields = ('id', "name", "age",
-                  "bio", "song_count", "songs")
-
-        depth = 2
+        fields = ('id', "label")
