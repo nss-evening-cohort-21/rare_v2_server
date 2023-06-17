@@ -4,7 +4,6 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
 from rareapi.models import Tag
-from django.db.models import Count
 
 
 class TagView(ViewSet):
@@ -15,7 +14,7 @@ class TagView(ViewSet):
         Returns:
             Response -- JSON serialized tag
         """
-        tag = Tag.objects.annotate.get(pk=pk)
+        tag = Tag.objects.get(pk=pk)
         serializer = TagSerializer(tag)
         return Response(serializer.data)
 
