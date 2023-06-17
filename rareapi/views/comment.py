@@ -24,14 +24,14 @@ class CommentView(ViewSet):
 
     def create(self, request):
         """create"""
-        post = Post.objects.get(pk=request.data["postId"])
-        author = RareUser.objects.get(pk=request.data["authorId"])
+        post_id = Post.objects.get(pk=request.data["postId"])
+        author_id = RareUser.objects.get(pk=request.data["authorId"])
 
         comment = Comment.objects.create(
             content=request.data["content"],
             created_on=request.data["createdOn"],
-            post=post,
-            author=author,
+            post_id=post_id,
+            author_id=author_id
         )
         serializer = CommentSerializer(comment)
         return Response(serializer.data)
@@ -42,9 +42,9 @@ class CommentView(ViewSet):
         comment.content = request.data["content"]
         comment.created_on = request.data["createdOn"]
 
-        post_id = Post.objects.get(pk=request.data["post_id"])
+        post_id = Post.objects.get(pk=request.data["postId"])
         comment.post_id = post_id
-        author_id = RareUser.objects.get(pk=request.data["rareUser_id"])
+        author_id = RareUser.objects.get(pk=request.data["authorId"])
         comment.author_id = author_id
         comment.save()
 
