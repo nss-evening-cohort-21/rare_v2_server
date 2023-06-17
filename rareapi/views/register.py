@@ -47,14 +47,14 @@ def register_rare_user(request):
   
   #Now save the rare_user info in the the rareapi_rareuser table
   rare_user = RareUser.objects.create(
-    first_name = request.data['firstName']
-    last_name = request.data['lastName']
-    bio = request.data['bio']
-    profile_image_url = request.data['profileImageUrl']
-    email = request.data['email']
-    created_on = request.data['createdOn']
-    active = request.data['active']
-    is_staff = request.data['isStaff']
+    first_name = request.data['firstName'],
+    last_name = request.data['lastName'],
+    bio = request.data['bio'],
+    profile_image_url = request.data['profileImageUrl'],
+    email = request.data['email'],
+    created_on = request.data['createdOn'],
+    active = request.data['active'],
+    is_staff = request.data['isStaff'],
     uid = request.data['uid']
   )
   
