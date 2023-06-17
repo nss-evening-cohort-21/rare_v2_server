@@ -3,7 +3,7 @@
       "model": "rareapi.post",
       "pk": 1,
       "fields": {
-          "user_id": 1,
+          "rare_user_id": 1,
           "title": "Job Growth in Tech",
           "content": "yadda yadda",
           "category_id": 1,
@@ -16,7 +16,7 @@
     "model": "rareapi.post",
     "pk": 2,
     "fields": {
-        "user_id": 2,
+        "rare_user_id": 2,
         "title": "NSS Is Great",
         "content": "Ryan",
         "category_id": 2,
@@ -29,7 +29,7 @@
     "model": "rareapi.post",
     "pk": 3,
     "fields": {
-        "user_id": 3,
+        "rare_user_id": 3,
         "title": "New Developments in AI",
         "content": "Ryan",
         "category_id": 3,
@@ -42,7 +42,7 @@
     "model": "rareapi.post",
     "pk": 4,
     "fields": {
-        "user_id": 4,
+        "rare_user_id": 4,
         "title": "Apple Glasses",
         "content": "Ryan",
         "category_id": 4,
