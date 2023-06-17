@@ -33,14 +33,14 @@ class PostView(ViewSet):
         Returns:
             Response -- JSON serialized post instance
         """
-        user = RareUser.objects.get(pk=request.data["rare_user_id"])
-        category = Category.objects.get(pk=request.data["category_id"])
+        user = RareUser.objects.get(pk=request.data["rareUserId"])
+        category = Category.objects.get(pk=request.data["categoryId"])
         post = Post.objects.create(
             rare_user_id=user,
             category_id=category,
             title=request.data["title"],
-            publication_date=request.data["publication_date"],
-            image_url=request.data["image_url"],
+            publication_date=request.data["publicationDate"],
+            image_url=request.data["imageUrl"],
             content=request.data["content"],
             approved=request.data["approved"],
         )
@@ -54,13 +54,13 @@ class PostView(ViewSet):
             Response -- Empty body with 204 status code
         """
         post = Post.objects.get(pk=pk)
-        user = RareUser.objects.get(pk=request.data["rare_user_id"])
+        user = RareUser.objects.get(pk=request.data["rareUserId"])
         post.rare_user_id=user
-        category = Category.objects.get(pk=request.data["category_id"])
+        category = Category.objects.get(pk=request.data["categoryId"])
         post.category_id=category
         post.title=request.data["title"]
-        post.publication_date=request.data["publication_date"]
-        post.image_url=request.date["image_url"]
+        post.publication_date=request.data["publicationDate"]
+        post.image_url=request.data["imageUrl"]
         post.content=request.data["content"]
         post.approved=request.data["approved"]
         post.save()
