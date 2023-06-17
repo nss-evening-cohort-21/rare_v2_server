@@ -1,1 +1,1 @@
-from .comment import Comment
+from .comment import CommentView
