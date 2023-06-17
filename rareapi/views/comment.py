@@ -24,8 +24,8 @@ class CommentView(ViewSet):
 
     def create(self, request):
         """create"""
-        post = Post.objects.get(pk=request.data["post"])
-        author = RareUser.objects.get(pk=request.data["rareUser"])
+        post = Post.objects.get(pk=request.data["postId"])
+        author = RareUser.objects.get(pk=request.data["authorId"])
 
         comment = Comment.objects.create(
             content=request.data["content"],
@@ -42,9 +42,9 @@ class CommentView(ViewSet):
         comment.content = request.data["content"]
         comment.created_on = request.data["createdOn"]
 
-        post_id = Post.objects.get(pk=request.data["post"])
+        post_id = Post.objects.get(pk=request.data["post_id"])
         comment.post_id = post_id
-        author_id = RareUser.objects.get(pk=request.data["rareUser"])
+        author_id = RareUser.objects.get(pk=request.data["rareUser_id"])
         comment.author_id = author_id
         comment.save()
 
