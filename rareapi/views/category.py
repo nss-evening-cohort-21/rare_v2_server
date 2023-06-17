@@ -21,7 +21,7 @@ class CategoryView(ViewSet):
       category = Category.objects.get(pk=pk)
       
       serializer = CategorySerializer(category)
-      return Response(serializer.data, status=status.HTTP_200_oK)
+      return Response(serializer.data, status=status.HTTP_200_OK)
     
     except Category.DoesNotExist as ex:
         return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
