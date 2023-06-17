@@ -35,9 +35,9 @@ class CommentView(ViewSet):
         )
         serializer = CommentSerializer(comment)
         return Response(serializer.data)
-    
+
     def update(self, request, pk):
-      
+
         comment = Comment.objects.get(pk=pk)
         comment.content = request.data["content"]
         comment.created_on = request.data["createdOn"]
@@ -47,9 +47,13 @@ class CommentView(ViewSet):
         author_id = RareUser.objects.get(pk=request.data["rareUser"])
         comment.author_id = author_id
         comment.save()
-        
+
         return Response(None, status=status.HTTP_204_NO_CONTENT)
         
+    def destroy(self, request, pk):
+        comment = Comment.objects.get(pk=pk)
+        comment.delete()
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
 class CommentSerializer(serializers.ModelSerializer):
 
     class Meta:
