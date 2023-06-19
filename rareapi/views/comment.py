@@ -19,6 +19,9 @@ class CommentView(ViewSet):
     def list(self, request):
         """get all"""
         comments = Comment.objects.all()
+        post_comments = request.query_params.get('post_id', None)
+        if post_comments is not None:
+                comments = comments.filter(post_id=post_comments)
         serializer = CommentSerializer(comments, many=True)
         return Response(serializer.data)
 
