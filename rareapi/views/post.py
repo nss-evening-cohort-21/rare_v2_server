@@ -88,4 +88,4 @@ class PostSerializer(serializers.ModelSerializer):
         fields = ('id', 'rare_user_id', 'category_id',
                   'title', 'publication_date', 'image_url',
                   'content', 'approved')
-        depth = 0
+        depth = 1
