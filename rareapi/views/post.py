@@ -24,6 +24,9 @@ class PostView(ViewSet):
             Response -- JSON serialized list of posts
         """
         posts = Post.objects.all()
+        user_posts = request.query_params.get('rare_user_id', None)
+        if user_posts is not None:
+                posts = posts.filter(rare_user_id=user_posts)
         serializer = PostSerializer(posts, many=True)
         return Response(serializer.data)
 
@@ -85,4 +88,4 @@ class PostSerializer(serializers.ModelSerializer):
         fields = ('id', 'rare_user_id', 'category_id',
                   'title', 'publication_date', 'image_url',
                   'content', 'approved')
-        depth = 1
+        depth = 0
