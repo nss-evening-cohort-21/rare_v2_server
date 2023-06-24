@@ -25,11 +25,12 @@ router.register(r'tags', TagView, 'tag')
 router.register(r'comments', CommentView, 'comment')
 router.register(r'categories', CategoryView, 'category')
 router.register(r'posts', PostView, 'post')
-router.register(r'rareusers', RareUserView, 'rareuser')
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
     path('register', register_rare_user),
     path('checkuser', check_rare_user),
+    path('users/', RareUserView.as_view(), name='user-list'),
 ]

@@ -1,27 +1,28 @@
 from django.http import HttpResponseServerError
-from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
 from rareapi.models import RareUser
+from rest_framework.views import APIView
 
-class RareUserView(ViewSet):
-  """Rare User typesview"""
+
+class RareUserView(APIView):
   
-  def retrieve(self, request, pk):
-    """Handle GET request for a single user
+  def get(self, request):
+    """Gets all users
     
     Returns 
-      Response -- single JSON serialized user
+      Response -- single JSON serialized of users
     """
+    uid = request.query_params.get('uid')
+    rare_users = RareUser.objects.all()
     
-    try:
-      rare_user = RareUser.objects.get(pk=pk)
-      serializer = RareUserSerializer(rare_user)
-      return Response(serializer.data)
-    except RareUser.DoesNotExist as ex:
-      return Response({'message': ex.args[0]},status=status.HTTP_404_NOT_FOUND)
+    if uid:
+        rare_users = rare_users.filter(uid=uid)
     
-    
+    serializer = RareUserSerializer(rare_users, many=True)
+    return Response(serializer.data)
+      
+
 class RareUserSerializer(serializers.ModelSerializer):
       """JSON serializer for rare_users"""
       
